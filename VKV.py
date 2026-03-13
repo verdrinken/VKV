@@ -13,12 +13,13 @@ if D < 0:
 else:
     SD = sqrt(D)  # Square root of D for easier calculations in future lines
     
-    if D == 0:
-        print("Een oplossing")
-        X = round((-B - SD) / (2 * A), 2)
-        print("X =", X)
-    else:
-        print("Twee Oplossingen")
-        X1 = round((-B - SD) / (2 * A), 2)
-        X2 = round((-B + SD) / (2 * A), 2)
-        print(f"X1 = {X1}\nX2 = {X2}")
+if D == 0:
+    print("Een oplossing")
+    X = round((-B - SD) / (2 * A), 2)
+    print("X =", X)
+else:
+    print("Twee Oplossingen")
+    X1 = round((-B - SD) / (2 * A), 2)
+    X2 = round((-B + SD) / (2 * A), 2)
+    print(f"X1 = {X1}\nX2 = {X2}")
+
